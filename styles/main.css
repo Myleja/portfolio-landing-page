@@ -1,6 +1,9 @@
 h1 {
     font-family: 'Lobster', cursive;
 }
+p{
+    font-size: 16px;
+ }
 
 .item {
    text-align: 200px;
@@ -16,8 +19,10 @@ body {
      text-align: center;
  }
  .wrapper {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 80vh;
   }
   .wrapper i {
     padding: 10px;
@@ -37,3 +42,10 @@ body {
     margin-top: -3px;
     text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
   }
+  /* idea how to style social media icons from https://codepen.io/CF-251/pen/eGZLYV  pen by Helen
+@CF-251  */
+
+  i.fa::before{
+    font-size: 40px;
+}
+/* updating the font-size of a FA icon using the before pseudo-element. No need for extra wrapper elements or rewriting classes. https://developer.mozilla.org/en-US/docs/Web/CSS/::before */
