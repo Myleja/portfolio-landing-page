@@ -10,11 +10,59 @@ img {
     width: 220px;
     height: 200px;
     border-radius: 180px;
-    padding: 5%;
 }
+
 body {
      text-align: center;
-     background-color: rgba(255, 255, 128, .5); }
+     background-color: rgba(255, 255, 128, .5); 
+    }
+
+    /*navigation styling, code given in a class, by Liz Coulter */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav {
+      margin: 50px;
+    }
+    
+    ul {
+      overflow: auto;
+      list-style-type: none;
+    }
+   
+    li {
+      height: 25px;
+      float: left;
+      margin-right: 0px;
+      border-right: 1px solid 
+     #aaa;
+      padding: 0 20px;
+    }
+    
+    li:last-child {
+      border-right: none;
+    }
+   
+    li a {
+      text-decoration: none;
+      color: #ccc;
+      font-family: 'Alegreya', serif;
+      font-size: 110%;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+    }
+     
+    li a:hover {
+      color: #666;
+    }
+  
+    li.active a {
+      font-weight: bold;
+      color: #333;
+    }
+  
  .wrapper {
     display: flex;
     justify-content: center;
